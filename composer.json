@@ -1,0 +1,45 @@
+{
+  "name": "tillprochaska/kirby-image-optimizer",
+  "description": "Optimizes automatically generated thumbnails using spatie/image-optimizer.",
+  "license": "MIT",
+  "require": {
+    "getkirby/cms": "^3.6",
+    "spatie/image-optimizer": "^1.6"
+  },
+  "require-dev": {
+    "pestphp/pest": "^1.21",
+    "friendsofphp/php-cs-fixer": "3.4",
+    "tillprochaska/kirby-test-utils": "dev-main"
+  },
+  "authors": [
+    {
+      "name": "Till Prochaska",
+      "email": "mail@tillprochaska.de"
+    }
+  ],
+  "scripts": {
+    "test": "pest",
+    "cs": "php-cs-fixer fix --dry-run --config=.php-cs -- tests/ plugin/",
+    "cs:fix": "php-cs-fixer fix --config=.php-cs -- tests/ plugin/"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "TillProchaska\\KirbyImageOptimizer\\Tests\\": "tests/"
+    }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/tillprochaska/kirby-test-utils"
+    }
+  ],
+  "extra": {
+    "kirby-cms-path": false
+  },
+  "config": {
+    "allow-plugins": {
+      "getkirby/composer-installer": true,
+      "pestphp/pest-plugin": true
+    }
+  }
+}
