@@ -9,7 +9,7 @@
   },
   "require-dev": {
     "pestphp/pest": "^1.21",
-    "friendsofphp/php-cs-fixer": "3.8.0",
+    "friendsofphp/php-cs-fixer": "3.13.0",
     "tillprochaska/kirby-test-utils": "0.1.0"
   },
   "authors": [
